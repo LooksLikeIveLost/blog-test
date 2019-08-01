@@ -19,10 +19,10 @@ layout: default
         <h3>
           <div class="span2">
             {% if post.thumbnail %}
-            	 <img src="{{ post.thumbnail }}" align="center" />
-            	{% else %}
-              	<img src="/Images/no-thumbnail.png" align="center" />
-            	{% endif %}
+        	    <img src="{{ post.thumbnail }}" align="center" />
+          	{% else %}
+              <img src="/Images/no-thumbnail.png" align="center" />
+          	{% endif %}
           </div>
           <a class="post-link" href="{{ post.url | relative_url }}">
             {{ post.title | escape }}
